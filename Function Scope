@@ -1,0 +1,11 @@
+//function scope.....in this function scope the varaibles inside the function can accessed but not outside the function
+let fourth_city = "Tokyo"
+let fifth_city = "canada"
+
+function greet(){
+   let celebrate = "welcome to ..."
+   let celebrate2 = "once again welcome to ..."
+   console.log(celebrate)
+}
+greet();
+console.log(fourth_city)
