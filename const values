@@ -1,0 +1,7 @@
+let city = "Chennai";
+const country = "India";
+
+   //country = "USA"--this may cause error because already the value is constant
+city = "Hyderabad";   
+console.log(city)
+console.log(country)
