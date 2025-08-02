@@ -1,0 +1,13 @@
+//global scope.... in  this gobal scope the varaibles inside and outside the function can be accessed
+let first_city = "Italy"
+let second_city = "France"
+let  third_city = "Spain"
+
+function showcity(){
+   let sweet = "laddu lax" 
+   console.log(sweet)
+   console.log(second_city)
+   
+}
+showcity();
+console.log(first_city)
