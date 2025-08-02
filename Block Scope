@@ -1,0 +1,12 @@
+//Block scope.....................so block scope defines the varaiable and its print operation of console.log() should be with in the flower brackets
+{
+  let greeting = "Hello from inside block";
+  console.log(greeting); 
+}
+console.log(greeting)  // for this we get undefined
+// if we use var,it is not block-scoped,it behaves like it is outside the block
+{
+  var greeting = "Hello from inside block";
+  console.log(greeting); 
+}
+console.log(greeting)
