@@ -1,0 +1,13 @@
+valid:
+let name = "vishnu"
+let _score = 99;
+let $amount =9999;
+let total123 = 6;
+console.log(name)
+console.log(_score)
+console.log($amount)
+console.log(total123)
+in valid:
+//let sal-ary = 100000;  //this may cause error because the variable name is invalid
+//let 123total = 100000;  //this may cause error because the variable name is invalid
+//let let = 100000;  //this may cause error because the variable name is invalid
