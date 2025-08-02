@@ -1,0 +1,7 @@
+let fruit1 = "orange"
+
+console.log(fruit1)
+
+fruit1 ="Mango";
+
+console.log(fruit1)
