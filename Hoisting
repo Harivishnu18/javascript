@@ -1,0 +1,123 @@
+//Hoisting of variables.....
+
+//if we let and const we will get error but if we use var we will get undefined,
+
+//we call a function before its declaration
+greet();
+
+function greet() {
+  console.log("Hello!");
+}
+
+//let
+let x15;
+console.log(x15)
+x15=19;
+
+// so in this case it will give undefined because the variable is declared but not initialized
+var x16;
+console.log(x16)
+x16=21;
+
+//// so with const only we should declare the value ,but in let and  var we can declar them later
+//const x17;
+//console.log(x17)
+//x17 = 23
+
+//| Keyword | Can declare without value? | Can assign value later? | Can reassign value later? |
+//| ------- | -------------------------- | ----------------------- | ------------------------- |
+//| `var`   | ✅ Yes                      | ✅ Yes                   | ✅ Yes                     |
+//| `let`   | ✅ Yes                      | ✅ Yes                   | ✅ Yes                     |
+//| `const` | ❌ **No**                   | ❌ No                    | ❌ No                      |
+
+//TDZ is the time between when a let or const variable is hoisted and when it is initialized.
+//During TDZ, you cannot access the variable at all.
+//This helps catch bugs where you're trying to use a variable too early.
+  
+  //⚙️ What's Happening Internally?
+////For var:
+
+//console.log(a); // undefined
+//var a = 10;
+
+//What JavaScript does behind the scenes:
+
+//var a;            // Hoisted to top, value is undefined
+//console.log(a);   // Prints undefined
+//a = 10;           // Now value is assigned
+//✅ No error, because JavaScript declared a at the top and gave it undefined by default.
+
+//❌ For let:
+
+//console.log(b); // ❌ ReferenceError
+//let b = 10;
+//What JavaScript does behind the scenes:
+
+// let b; ← Declaration is hoisted, BUT...
+// It's in the **Temporal Dead Zone (TDZ)**
+
+//console.log(b);   // ❌ ReferenceError: Cannot access 'b' before initialization
+//let b = 10;       // Now it's safe to use
+
+
+//......What's the Temporal Dead Zone (TDZ)?
+//TDZ is the time between when a let or const variable is hoisted and when it is initialized.
+//During TDZ, you cannot access the variable at all.
+//This helps catch bugs where you're trying to use a variable too early.
+
+//  //SCENARIO 1: Using var
+
+// console.log(a);
+// var a = 10;
+// 🧠 How JavaScript sees it (internally):
+
+// var a;           // Hoisted (memory created, value = undefined)
+// console.log(a);  // ✅ prints: undefined
+// a = 10;          // Value is now set
+
+// 🧭 Timeline:
+
+// Time  → → → →
+// Step:    Hoisting     | console.log(a)  | Assignment
+// Memory:  a = undefined| prints undefined| a = 10
+
+// SCENARIO 2: Using let
+
+// console.log(b);
+// let b = 10;
+// 🧠 How JavaScript sees it:
+
+// // let b; ← Hoisted, but in TDZ (Temporal Dead Zone)
+// console.log(b);  // ❌ ReferenceError: Cannot access 'b' before initialization
+// b = 10;
+// 🧭 Timeline with TDZ:
+
+// Time  → → → →
+// Step:    Hoisting      | console.log(b)     | Assignment
+// Memory: b declared but| ❌ Error (TDZ!)     | b = 10 (now usable)
+//          not initialized
+
+// 🧠 Memory Model (Behind the Scenes)
+// Code Line	Memory Before Execution
+// var a = 10;	a → undefined (then 10)
+// let b = 10;	❌ b is not accessible until line reached
+
+// ⚠️ Summary: TDZ in Action
+// var → Available right after hoisting, value is undefined
+
+// let / const → In Temporal Dead Zone until the code runs the actual line — accessing them earlier causes ReferenceError
+// so if we give value for varaible  after print  function for var then it will be undefined,but in let and const they need value before print function if we give after then they get error,so this is what hoisting is
+
+
+
+// ✅ YES — you're absolutely right!
+// And you’ve just nailed the true meaning of hoisting.
+
+// Let’s now wrap it all up in one simple definition, using your understanding:
+
+// 🎯 Final Definition of Hoisting (Your Words Polished):
+// Hoisting in JavaScript means that variable and function declarations are moved to the top of their scope before the code runs.
+
+// For var: the declaration is hoisted and initialized with undefined, so you can use it before assigning, but it gives undefined.
+
+// For let and const: the declaration is hoisted, but they stay in a Temporal Dead Zone (TDZ) — so you cannot access them before the line where they are declared and assigned.
