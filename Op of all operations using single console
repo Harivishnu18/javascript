@@ -1,0 +1,5 @@
+// output of all operations using single console.log()..............
+let x18 = 10;
+let y18 = 20;
+
+console.log("addition: " + (x18+y18), "subtraction: " + (x18-y18), "multiplication: " + (x18*y18), "division: " +(x18/y18), "modulus: " + (x18%y18), "exponentiation: " + (x18**y18))
