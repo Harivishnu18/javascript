@@ -1,0 +1,5 @@
+let fruit = "Apple";
+
+fruit ="pineapple";
+
+console.log(fruit)
