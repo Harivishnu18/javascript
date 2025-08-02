@@ -1,0 +1,34 @@
+//shadowing of variables.....!!!!!!!!!
+
+
+//so in shadowing it is all about keeping same variable name for different varables and also getting respective output values
+//Shadowing” = Re-declaring a new variable with the same name in an inner scope, which temporarily hides the outer variable in that scope.
+example1:
+let name10 = "Vishnu";
+
+{
+  let name10= "Hari";  
+  console.log(name10);  
+}
+
+console.log(name10);   
+// here also if we use var instead of let it will give the same output as inside the block it will print hari and outside the block it will print hari
+Example 2:
+var  name11 = "Vishnu";
+
+{
+  var name11= "Hari";  
+  console.log(name11);  
+}
+
+console.log(name11);
+//example3
+var food = "Pizza";
+
+{
+  var food = "Burger";  
+  console.log(food); 
+}
+
+console.log(food);  
+
