@@ -1,0 +1,8 @@
+let x =5
+let y =10
+
+temp=x
+x=y
+y=temp 
+console.log(x)
+console.log(y)
