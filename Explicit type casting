@@ -1,0 +1,45 @@
+// Explicit Typecasting (Manual)
+
+
+// String → Number
+let a33 = Number("123");         // 123
+console.log('Number("123") =', a33);
+
+// Boolean → Number
+let a31= Number(true);          // 1
+let a32 = Number(false);         // 0
+console.log('Number(true) =', a31, ', Number(false) =', a32);
+
+// String with non-numeric text
+let d = Number("10px");        // NaN
+console.log('Number("10px") =', d);
+
+// Using parseInt() and parseFloat()
+let e = parseInt("123.45px");  // 123
+let f = parseFloat("123.45kg");// 123.45
+console.log('parseInt("123.45px") =', e);
+console.log('parseFloat("123.45kg") =', f);
+
+// Using unary plus
+let g = +"42";                 // 42
+console.log('+"42" =', g);
+
+// Any → String
+let h = String(456);           // "456"
+let i = String(true);          // "true"
+let j = [1, 2, 3].toString();  // "1,2,3"
+console.log('String(456) =', h, ', String(true) =', i);
+console.log('[1,2,3].toString() =', j);
+
+// Boolean casting
+let k = Boolean("hello");      // true
+let l = Boolean("");           // false
+let m = Boolean(0);            // false
+console.log('Boolean("hello") =', k, ', Boolean("") =', l, ', Boolean(0) =', m);
+
+// Object → JSON String and back
+let obj = { name: "Hari", age: 21 };
+let jsonStr = JSON.stringify(obj);     // '{"name":"Hari","age":21}'
+let backToObj = JSON.parse(jsonStr);   // { name: "Hari", age: 21 }
+console.log('JSON.stringify(obj) =', jsonStr);
+console.log('JSON.parse(jsonStr).name =', backToObj.name);
