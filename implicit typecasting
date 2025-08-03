@@ -1,0 +1,41 @@
+// String + Number = String
+  let a21 = "10" + 5;
+  console.log( a21);
+
+
+// String - Number = Number
+let a23 = "10" - 3;              
+console.log('"10" - 3 =', a23);
+
+// String * Number = Number
+let a24 = "5" * 2;               
+console.log('"5" * 2 =', a24);
+
+// for division also it will be same as multiplication ,string/ number = number
+let a22 = "10" / 2;              
+console.log('"10" / 2 =', a22);
+
+// Boolean + Number
+// true becomes 1
+let a25 = true + 1;              
+console.log('true + 1 =', a25);
+
+// false becomes 0
+let a26 = false * 10;          
+console.log('false * 10 =', a26);
+
+// null + Number
+let a27 = null + 5;             
+console.log('null + 5 =', a27);
+
+// undefined + Number = NaN
+let a28 = undefined + 5;       
+console.log('undefined + 5 =', a28);
+
+// Comparison
+let a29= "5" == 5;             
+console.log('"5" == 5 =', a29);
+
+// Array to string in + operation
+let a30 = [1, 2] + 3;          
+console.log('[1, 2] + 3 =', a30);
