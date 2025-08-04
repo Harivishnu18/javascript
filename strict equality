@@ -1,0 +1,14 @@
+//strict equality number
+let x42 = 5;  
+let y42 = '5';
+
+console.log(x42 === 6);
+console.log(y42 === '5');
+console.log(x42 === y42);
+
+console.log();
+
+console.log(NaN === NaN);   
+console.log(0 === false);   
+console.log(0 === null);
+
