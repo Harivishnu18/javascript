@@ -1,0 +1,12 @@
+
+let a15= 10;
+let b15 = ++a15 + 5;  // a becomes 11 first, then b = 11 + 5 = 16
+console.log(a15);   
+console.log(b15);   
+
+//in a loop
+
+let k1 = 0;
+while (++k1 < 4) {
+  console.log(k1);  // uses pre-increment (++j), prints: 1, 2, 3
+}
