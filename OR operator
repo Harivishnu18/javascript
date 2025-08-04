@@ -1,0 +1,21 @@
+let ageis = 16;
+let hasGuardian = true;
+
+// Logical OR checks if either condition is true
+if (ageis >= 18 || hasGuardian) {
+  console.log("Allowed");
+} else {
+  console.log("Not Allowed");
+}
+
+//example
+let i11 = 1;
+let j11 = null;
+let k11 = undefined;
+let l11 = 0;
+
+console.log(j11 || k11);
+console.log(i11 || l11);
+
+console.log(Boolean(j11 || k11));
+console.log(Boolean(i11 || l11));
