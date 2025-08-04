@@ -1,0 +1,15 @@
+ The logical AND (&&) operator checks whether both operands are true. If both are true, the result is true. If any one or both operands are false, the result is false.
+
+
+
+let age = 20;
+let idProof = true;
+
+// Logical AND checks both conditions
+if (age >= 18 && idProof) {
+  console.log("Allowed"); 
+} else {
+  console.log("Not Allowed");  
+}
+
+
