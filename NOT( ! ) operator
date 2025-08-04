@@ -1,0 +1,26 @@
+// NOT operator
+he logical NOT (!) operator inverts the boolean value of its operand. If the operand is true, it returns false. If the operand is false, it returns true.
+
+
+let isAllowed = true;
+
+console.log(!isAllowed);
+ex1;
+let isLoggedIn = false;
+
+if (!isLoggedIn) {
+  console.log("Log in!");
+} else {
+  console.log("Welcome back!");
+}
+ex2;
+//! =false
+//!!= false + false = true
+let x = "Hello";
+console.log(!x);
+console.log(!!x);  
+
+let y = 20;
+console.log(!y);
+console.log(!!y);
+
