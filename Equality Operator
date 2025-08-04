@@ -1,0 +1,16 @@
+//equality operator.......
+
+let x40= 5;
+let y40 = '5';
+
+
+console.log(x40 == 5);
+console.log(y40 == 5);        
+console.log(x40 == y40);
+
+console.log();
+
+// Check against special values
+console.log(NaN == NaN);
+console.log(0 == false);   
+console.log(0 == null);
