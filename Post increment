@@ -1,0 +1,10 @@
+let x39 = 10;
+let y39 = x39++ + 5;  // y = 10 + 5 = 15, then x becomes 11
+console.log(x39);   
+console.log(y39);   
+
+//example in a loop
+
+for (let n = 0; n < 3; n++) {
+  console.log(i);  // uses post-increment (i++), prints: 0, 1, 2
+}
